@@ -54,18 +54,18 @@ public class Main {
     }
     public static void task4() {
         System.out.println("Задача 6");
-        var firstBoxerWeight = 78.2;
-        System.out.println("Вес первого боксера " + firstBoxerWeight + " кг");
-        var secondBoxerWeight = 82.7;
-        System.out.println("Вес второго боксера " + secondBoxerWeight + " кг");
-        var fullWeight = firstBoxerWeight + secondBoxerWeight;
+        var BoxerWeight1 = 78.2;
+        System.out.println("Вес первого боксера " + BoxerWeight1 + " кг");
+        var BoxerWeight2 = 82.7;
+        System.out.println("Вес второго боксера " + BoxerWeight2 + " кг");
+        var fullWeight = BoxerWeight1 + BoxerWeight2;
         System.out.println("Общий вес бойцов составил " + fullWeight + " кг");
-        var differenceWeight = firstBoxerWeight - secondBoxerWeight;
+        var differenceWeight = BoxerWeight1 - BoxerWeight2;
         System.out.println("Разница между бойцами составила " + differenceWeight + " кг");
         System.out.println("Задача 7");
-        var weightDifference = secondBoxerWeight - firstBoxerWeight;
+        var weightDifference = BoxerWeight2 - BoxerWeight1;
         System.out.println(weightDifference);
-        var remainderWeight = (secondBoxerWeight % firstBoxerWeight);
+        var remainderWeight = (BoxerWeight2 % BoxerWeight1);
         System.out.println(remainderWeight);
     }
     public static void task5() {
