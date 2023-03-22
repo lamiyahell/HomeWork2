@@ -177,7 +177,7 @@ public class Main {
         System.out.println("Если спортсмен будет терять каждый день по " + gramV1 + " грамм, то на похудение уйдет " + fitV1 + " дней");
         int fitV2 = fitOver * 1000 / gramV2;
         System.out.println("Если спортсмен будет терять каждый день по " + gramV2 + " грамм, то на похудение уйдет " + fitV2 + " дней");
-        int fitSr = (fitV1 + fitV2) / 2;
+        float fitSr = fitOver * 1000f / ((gramV1 + gramV2)/ 2f);
         System.out.println("В среднем потребуется " + fitSr + " день, чтобы добиться результата");
 
         System.out.println("Задача 8");
