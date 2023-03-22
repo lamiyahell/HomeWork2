@@ -5,6 +5,8 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
     }
 
     public static void task1() {
@@ -81,4 +83,120 @@ public class Main {
         var newWorkTime = fullTeam * employeeWork;
         System.out.println("Если в комании работает " + fullTeam + " человека, то всего " + newWorkTime + " часов работы может быть поделено между сотрудниками");
     }
+
+    public static void task6() {
+        System.out.println("Домашнее задание - Переменные. Урок 2");
+        System.out.println("Задача 1");
+        byte a = -10;
+        System.out.println("Значение переменной а с типом byte = " + a);
+        short b = 150;
+        System.out.println("Значение переменной b с типом short = " + b);
+        int c = 500;
+        System.out.println("Значение переменной c с типом int = " + c);
+        long d = 900L;
+        System.out.println("Значение переменной d с типом long = " + d);
+        float e = 0.2f;
+        System.out.println("Значение переменной e с типом float = " + e);
+        double f = 1.265;
+        System.out.println("Значение переменной f с типом double = " + f);
+    }
+    public static void task7() {
+        System.out.println("Задача 2");
+        float a1 = 27.12f;
+        System.out.println(a1);
+        long b1 = 987678965549L;
+        System.out.println(b1);
+        double c1 = 2.786;
+        System.out.println(c1);
+        short d1 = 569;
+        System.out.println(d1);
+        short e1 = -159;
+        System.out.println(e1);
+        int f1 = 27897;
+        System.out.println(f1);
+        byte g1 = 67;
+        System.out.println(g1);
+
+        System.out.println("Задача 3");
+        byte classL_P = 23;
+        System.out.println("Людмила Павловна обучает класс из " + classL_P + " учеников");
+        byte classA_S = 27;
+        System.out.println("Анна Сергеевна обучает класс из " + classA_S + " учеников");
+        byte classE_A = 30;
+        System.out.println("Екатерина Андреевна обучает класс из " + classE_A + " учеников");
+        short paper = 480;
+        System.out.println("Три учительницы купили " + paper + " листов бумаги на три класса");
+        int classPaper = paper / (classL_P + classA_S + classE_A);
+        System.out.println("На каждого ученика рассчитано " + classPaper + " листов бумаги");
+
+        System.out.println("Задача 4");
+        byte startBottle = 16;
+        byte twoMin = 2;
+        System.out.println("Производительность машины для изготовления бутылок - " + startBottle + " бутылок за " + twoMin + " минуты");
+        byte time20Min = 20;
+        int bottle1 = time20Min / twoMin * startBottle;
+        System.out.println("За 20 минут машина произвела " + bottle1 + " штук бутылок");
+        int day = time20Min * 3 * 24;
+        int bottle2 = day / twoMin * startBottle;
+        System.out.println("За сутки машина произвела " + bottle2 + " штук бутылок");
+        int day3 = day * 3;
+        int bottle3 = day3 / twoMin * startBottle;
+        System.out.println("За 3 дня машина произвела " + bottle3 + " штук бутылок");
+        int month = day3 * 10;
+        int bottle4 = month / twoMin * startBottle;
+        System.out.println("За месяц машина произвела " + bottle4 + " штук бутылок");
+
+        System.out.println("Задача 5");
+        byte jars = 120;
+        byte jarW = 2;
+        byte jarB = 4;
+        int classes = 120 / (jarW + jarB);
+        int whiteJ = classes * jarW;
+        int brownJ = jars - whiteJ;
+        System.out.println("В школе, где " + classes + " классов, нужно " + whiteJ + " банок белой краски и " + brownJ + " банок коричневой краски");
+
+        System.out.println("Задача 6");
+        byte banana = 5;
+        byte bananaWeight = 80;
+        byte milk = 2;
+        byte milkWeight = 105;
+        byte ice = 2;
+        byte iceWeight = 100;
+        byte egg = 4;
+        byte eggWeight = 70;
+        int recipeGrams = (banana * bananaWeight) + (milk * milkWeight) + (ice * iceWeight) + (egg * eggWeight);
+        System.out.println("Вес спортивного завтрака " + recipeGrams + " граммов");
+        float recipeKg = recipeGrams / 1000f;
+        System.out.println("Вес спортивного завтра " + recipeKg + " кг");
+
+        System.out.println("Задача 7");
+        byte fitOver = 7;
+        short gramV1 = 250;
+        short gramV2 = 500;
+        int fitV1 = fitOver * 1000 / gramV1;
+        System.out.println("Если спортсмен будет терять каждый день по " + gramV1 + " грамм, то на похудение уйдет " + fitV1 + " дней");
+        int fitV2 = fitOver * 1000 / gramV2;
+        System.out.println("Если спортсмен будет терять каждый день по " + gramV2 + " грамм, то на похудение уйдет " + fitV2 + " дней");
+        int fitSr = (fitV1 + fitV2) / 2;
+        System.out.println("В среднем потребуется " + fitSr + " день, чтобы добиться результата");
+
+        System.out.println("Задача 8");
+        int salaryMaria = 67760;
+        System.out.println("Маша получает " + salaryMaria + " рублей в месяц");
+        int salaryDenis = 83690;
+        System.out.println("Денис получает " + salaryDenis + " рублей в месяц");
+        int salaryKristina = 76230;
+        System.out.println("Кристина получает " + salaryKristina + " рублей в месяц");
+        int rate = 10;
+        int increaseSalary_M = salaryMaria * (100 + rate) / 100;
+        int incomeM = (increaseSalary_M - salaryMaria) * 12;
+        System.out.println("Маша теперь получает " + increaseSalary_M + " рублей. Годовой доход вырос на " + incomeM + " рублей");
+        int increaseSalary_D = salaryDenis * (100 + rate) / 100;
+        int incomeD = (increaseSalary_D - salaryDenis) * 12;
+        System.out.println("Денис теперь получает " + increaseSalary_D + " рублей. Годовой доход вырос на " + incomeD + " рублей");
+        int increaseSalary_K = salaryKristina * (100 + rate) / 100;
+        int incomeK = (increaseSalary_K - salaryKristina) * 12;
+        System.out.println("Кристина теперь получает " + increaseSalary_K + " рублей. Годовой доход вырос на " + incomeK + " рублей");
+    }
+
 }
